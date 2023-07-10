@@ -1,0 +1,72 @@
+{
+    "version": "2.0.0",
+    "oauth2_provider_name": "snowflake rest api",
+    "fields": [
+      {
+        "field": "AUTH_TYPE",
+        "displayName": "Snowflake Auth Type",
+        "type": "String",
+        "minLength": 4,
+        "maxLength": 60,
+        "required": true,
+        "description": "Snowflake API Auth Type",
+        "default": "OAUTH2",
+        "example": "OAUTH2",
+        "helpSection": ""
+      },
+      {
+        "field": "ACCESS_TOKEN",
+        "displayName": "OAuth2 Access Token",
+        "type": "String",
+        "minLength": 5,
+        "maxLength": 250,
+        "required": true,
+        "description": "Snowflake OAuth2 access token",
+        "helpSection": "Snowflake OAuth2 access token"
+      },
+      {
+        "field": "REFRESH_TOKEN",
+        "displayName": "OAuth2 refresh token",
+        "type": "String",
+        "minLength": 1,
+        "maxLength": 180,
+        "required": false,
+        "description": "Snowflake OAuth2 refresh token",
+        "helpSection": "Snowflake OAuth2 refresh token"
+      },
+      {
+        "field": "EXPIRES_AT",
+        "displayName": "OAuth2 Expiry Time",
+        "type": "String",
+        "minLength": 5,
+        "maxLength": 30,
+        "required": false,
+        "description": "Snowflake OAuth2 token refresh time",
+        "example": "2022-11-18T15:08:55.642141+05:30",
+        "helpSection": "Snowflake OAuth2 token refresh time"
+      },
+      {
+        "field": "SERVER_URL",
+        "displayName": "Snowflake Server URL",
+        "type": "String",
+        "minLength": 4,
+        "maxLength": 60,
+        "required": true,
+        "description": "Snowflake API Server URL",
+        "example": "https://<account_identifier>.snowflakecomputing.com/api/v2/statements",
+        "default": "https://qi69818.west-us-2.azure.snowflakecomputing.com/api/v2/statements/",
+        "helpSection": ""
+      },
+      {
+        "field": "provider",
+        "displayName": "OAuth2 Provider Name",
+        "type": "String",
+        "minLength": 1,
+        "maxLength": 60,
+        "required": true,
+        "description": "Snowflake OAuth2 provider name",
+        "example": "Snowflake",
+        "helpSection": "Snowflake OAuth2 provider name"
+      }
+    ]
+  }
