@@ -23,7 +23,7 @@ Once you've logged-in to your account, you would need to authenticate to the ser
 ```alter user admin set default role = sysadmin;```
 
 2. The user would also have to create a database using the query ```CREATE DATABASE <enter database-name>;``` and then
-choose an existing warehouse from the list of warehouses in his account 
+choose an existing warehouse from the list of warehouses in their account 
 ```show warehouses;``` or create a new one ```CREATE OR REPLACE WAREHOUSE <warehouse-name> WITH WAREHOUSE_SIZE='<enter desired warehouse size>';``` 
 
 3. Now, the user would have to enable OAuth2 for accessing the API. This can be achieved by running the below query.
@@ -39,13 +39,15 @@ oauth_refresh_token_validity = 7776000; -- (90 days maximum validity)
 ```
 This should return a "Integration <enter security integration name> successfully created." status.
 
-4. In order to access the details of the security integration and access the client tokens, run 
+4. In order to access the details of the security integration and access the client tokens, run
+
 ```describe security integration <enter security integration name>;```
 
 5. To further get details regarding secret tokens, run query 
+
 ``` select system$show_oauth_client_secrets('<enter security integration name>');```
 
-6. Use an application like Postman or Insomnia to fill in the token details and activate the refresh token. Once the Authentication is enabled, the user can go ahead and make API calls.
+6. Use an application like Postman or Insomnia to fill in the token details and activate the refresh token. Once the Authentication is enabled, the user would be able to make API calls.
 
 ## Creating an Account and Accessing the API ##
 
