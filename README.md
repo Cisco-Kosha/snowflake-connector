@@ -27,14 +27,16 @@ choose an existing warehouse from the list of warehouses in his account
 ```show warehouses;``` or create a new one ```CREATE OR REPLACE WAREHOUSE <warehouse-name> WITH WAREHOUSE_SIZE='<enter desired warehouse size>';``` 
 
 3. Now, the user would have to enable OAuth2 for accessing the API. This can be achieved by running the below query.
-```create or replace security integration <enter security integration name>
+```
+create or replace security integration <enter security integration name>
 type = oauth
 enabled = true
 oauth_client = custom
 oauth_client_type = 'CONFIDENTIAL'
 oauth_redirect_uri = 'https://oauth.pstmn.io/v1/callback'
 oauth_issue_refresh_tokens = true
-oauth_refresh_token_validity = 7776000; -- (90 days maximum validity) ```
+oauth_refresh_token_validity = 7776000; -- (90 days maximum validity) 
+```
 This should return a "Integration <enter security integration name> successfully created." status.
 
 4. In order to access the details of the security integration and access the client tokens, run 
