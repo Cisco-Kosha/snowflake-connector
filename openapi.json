@@ -2,13 +2,13 @@
     "openapi": "3.0.0",
     "servers": [
         {
-            "description": "Snowflake SQL API V2",
-            "url": "https://org-account.snowflakecomputing.com"
+
+            "url": "/"
         }
     ],
     "info": {
         "version": "2.0.0",
-        "title": "Snowflake SQL API",
+        "title": "Kosha Snowflake Connector API",
         "description": "The Snowflake SQL API is a REST API that you can use to access and update data in a Snowflake database. ",
         "contact": {
             "name": "Snowflake, Inc.",

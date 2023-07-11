@@ -1,6 +1,6 @@
 {
     "version": "2.0.0",
-    "oauth2_provider_name": "snowflake rest api",
+    "oauth2_provider_name": "snowflake",
     "fields": [
       {
         "field": "AUTH_TYPE",
@@ -67,6 +67,18 @@
         "description": "Snowflake OAuth2 provider name",
         "example": "Snowflake",
         "helpSection": "Snowflake OAuth2 provider name"
+      }, 
+      {
+        "field": "email",
+        "displayName": "Email fetched from OAuth2 auth flow",
+        "type": "String",
+        "minLength": 1,
+        "maxLength": 60,
+        "required": true,
+        "description": "Snowflake email fetched from OAuth2 auth flow",
+        "example": "user@email.com",
+        "helpSection": "Snowflake email fetched from OAuth2 auth flow"
       }
     ]
   }
+  
