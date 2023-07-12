@@ -33,7 +33,7 @@ type = oauth
 enabled = true
 oauth_client = custom
 oauth_client_type = 'CONFIDENTIAL'
-oauth_redirect_uri = 'https://oauth.pstmn.io/v1/callback'
+oauth_redirect_uri = '<enter callback url>'
 oauth_issue_refresh_tokens = true
 oauth_refresh_token_validity = 7776000; -- (90 days maximum validity) 
 ```
