@@ -45,17 +45,6 @@
                 "tags": [
                     "statements"
                 ],
-                "security": [
-                    {
-                        "keyPair": []
-                    },
-                    {
-                        "ExternalOAuth": []
-                    },
-                    {
-                        "snowflakeOAuth": []
-                    }
-                ],
                 "requestBody": {
                     "required": true,
                     "description": "Specifies the SQL statement to execute and the statement context.",
@@ -306,17 +295,6 @@
                 "tags": [
                     "statements"
                 ],
-                "security": [
-                    {
-                        "keyPair": []
-                    },
-                    {
-                        "ExternalOAuth": []
-                    },
-                    {
-                        "snowflakeOAuth": []
-                    }
-                ],
                 "responses": {
                     "200": {
                         "description": "The statement was executed successfully, and the response includes any data requested.",
@@ -407,17 +385,6 @@
             "post": {
                 "operationId": "CancelStatement",
                 "summary": "Cancels the execution of a statement.",
-                "security": [
-                    {
-                        "keyPair": []
-                    },
-                    {
-                        "ExternalOAuth": []
-                    },
-                    {
-                        "snowflakeOAuth": []
-                    }
-                ],
                 "description": "Cancels the execution of the statement with the specified statement handle.",
                 "tags": [
                     "statements"
@@ -1050,17 +1017,6 @@
             }
         }
     },
-    "security": [
-        {
-            "keyPair": []
-        },
-        {
-            "ExternalOAuth": []
-        },
-        {
-            "snowflakeOAuth": []
-        }
-    ],
     "externalDocs": {
         "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index.html"
     }
