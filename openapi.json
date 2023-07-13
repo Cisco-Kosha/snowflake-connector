@@ -45,17 +45,6 @@
                 "tags": [
                     "statements"
                 ],
-                "security": [
-                    {
-                        "keyPair": []
-                    },
-                    {
-                        "ExternalOAuth": []
-                    },
-                    {
-                        "snowflakeOAuth": []
-                    }
-                ],
                 "requestBody": {
                     "required": true,
                     "description": "Specifies the SQL statement to execute and the statement context.",
@@ -306,17 +295,6 @@
                 "tags": [
                     "statements"
                 ],
-                "security": [
-                    {
-                        "keyPair": []
-                    },
-                    {
-                        "ExternalOAuth": []
-                    },
-                    {
-                        "snowflakeOAuth": []
-                    }
-                ],
                 "responses": {
                     "200": {
                         "description": "The statement was executed successfully, and the response includes any data requested.",
@@ -407,17 +385,6 @@
             "post": {
                 "operationId": "CancelStatement",
                 "summary": "Cancels the execution of a statement.",
-                "security": [
-                    {
-                        "keyPair": []
-                    },
-                    {
-                        "ExternalOAuth": []
-                    },
-                    {
-                        "snowflakeOAuth": []
-                    }
-                ],
                 "description": "Cancels the execution of the statement with the specified statement handle.",
                 "tags": [
                     "statements"
@@ -985,29 +952,6 @@
                 "description": "Specify the authorization token type for the Authorization header. KEYPAIR_JWT is for Keypair JWT or OAUTH for oAuth token. If not specified, OAUTH is assumed."
             }
         },
-        "securitySchemes": {
-            "keyPair": {
-                "type": "http",
-                "scheme": "bearer",
-                "bearerFormat": "JWT",
-                "description": "Set X-Snowflake-Authorization-Token-Type to KEYPAIR_JWT if the token is a key pair authn JWT."
-            },
-            "ExternalOAuth": {
-                "type": "http",
-                "scheme": "bearer",
-                "bearerFormat": "JWT",
-                "description": "Configure External Oauth with Snowflake (refer to docs). Set X-Snowflake-Authorization-Token-Type to OAUTH and set the Token to auth token received from the external Auth server."
-            },
-            "snowflakeOAuth": {
-                "type": "oauth2",
-                "flows": {
-                    "implicit": {
-                        "authorizationUrl": "/oauth/authorize",
-                        "scopes": {}
-                    }
-                }
-            }
-        },
         "responses": {
             "400BadRequest": {
                 "description": "Bad Request. The request payload is invalid or malformed. This happens if the application didn't send the correct request payload. The response body may include the error code and message indicating the actual cause. The application must reconstruct the request body for retry."
@@ -1050,17 +994,6 @@
             }
         }
     },
-    "security": [
-        {
-            "keyPair": []
-        },
-        {
-            "ExternalOAuth": []
-        },
-        {
-            "snowflakeOAuth": []
-        }
-    ],
     "externalDocs": {
         "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index.html"
     }
