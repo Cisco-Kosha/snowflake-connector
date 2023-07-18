@@ -51,17 +51,17 @@ This should return a "Integration <enter security integration name> successfully
 
 ## Creating an Account and Accessing the API ##
 
-* The user should create a Snowflake account if they don't have one or login to their existing account here: https://app.snowflake.com/?_ga=2.123302796.629466385.1689059705-1673015637.1687470140&_gac=1.229246376.1688746933.EAIaIQobChMIjpO3xoD9_wIV1AXnCh0gTwh6EAAYASAAEgJ-8vD_BwE
+* The user should create a Snowflake account if they don't have one or login to their existing account [here](https://signup.snowflake.com/?utm_cta=trial-en-www-homepage-top-right-nav-ss-evg&_ga=2.74406678.547897382.1657561304-1006975775.1656432605&_gac=1.254279162.1656541671.Cj0KCQjw8O-VBhCpARIsACMvVLPE7vSFoPt6gqlowxPDlHT6waZ2_Kd3-4926XLVs0QvlzvTvIKg7pgaAqd2EALw_wcB).
 
 * Once the user signs in to their account, they can go access the Snowflake API and make API calls. The API is available at https://<account_identifier>.snowflakecomputing.com/api, where <account_identifier> is the account identifier. Read more about Snowflake's Account identifier [here](https://docs.snowflake.com/en/user-guide/admin-account-identifier).
 
 * The different endpoints offered by the API are:
 
-Endpoint                                    | Description
---------------------------------------------| -------------
-/api/v2/statements/                         | Use this endpoint to submit SQL statements for execution.
-/api/v2/statements/{< statementHandle >}       |  Use this endpoint to check the status of the execution of a statement. (statementHandle is a unique identifier for the statement submitted for execution.) 
-/api/v2/statements/{< statementHandle >}/cancel | Use this endpoint to cancel the execution of a statement.
+| Endpoint | Description |
+| -------------------------------------------- | -------------------------------------------- |
+| /api/v2/statements/ | Use this endpoint to submit SQL statements for execution. |
+| /api/v2/statements/{< statementHandle >} | Use this endpoint to check the status of the execution of a statement. (statementHandle is a unique identifier for the statement submitted for execution). |
+| /api/v2/statements/{< statementHandle >}/cancel | Use this endpoint to cancel the execution of a statement. |
 
 
 ## Kosha Connector Open Source Development
