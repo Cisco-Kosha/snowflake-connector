@@ -53,8 +53,8 @@
         "maxLength": 60,
         "required": true,
         "description": "Snowflake API Server URL",
-        "example": "https://<account_identifier>.snowflakecomputing.com/api/v2/statements",
-        "default": "https://qi69818.west-us-2.azure.snowflakecomputing.com/api/v2/statements/",
+        "example": "https://<account_identifier>.snowflakecomputing.com",
+        "default": "https://qi69818.west-us-2.azure.snowflakecomputing.com",
         "helpSection": ""
       },
       {
