@@ -60,8 +60,8 @@ This should return a "Integration <enter security integration name> successfully
 Endpoint                                    | Description
 --------------------------------------------| -------------
 /api/v2/statements/                         | Use this endpoint to submit SQL statements for execution.
-/api/v2/statements/{<statementHandle>}       |  Use this endpoint to check the status of the execution of a statement. (statementHandle is a unique identifier for the statement submitted for execution.) 
-/api/v2/statements/{<statementHandle>}/cancel | Use this endpoint to cancel the execution of a statement.
+/api/v2/statements/{< statementHandle >}       |  Use this endpoint to check the status of the execution of a statement. (statementHandle is a unique identifier for the statement submitted for execution.) 
+/api/v2/statements/{< statementHandle >}/cancel | Use this endpoint to cancel the execution of a statement.
 
 
 ## Kosha Connector Open Source Development
