@@ -880,7 +880,7 @@
                     "type": "integer",
                     "format": "int64",
                     "minimum": 0,
-                    "example": 2
+                    "example": 0
                 },
                 "required": false,
                 "description": "Number of the partition of results to return. The number can range from 0 to the total number of partitions minus 1."
@@ -890,7 +890,7 @@
                 "in": "query",
                 "schema": {
                     "type": "boolean",
-                    "example": true
+                    "example": false
                 },
                 "required": false,
                 "description": "Set to true to execute the statement to generate the result set including null. If the parameter is set to false, the result set value null will be replaced with a string 'null'."
@@ -901,7 +901,7 @@
                 "schema": {
                     "type": "string",
                     "format": "uuid",
-                    "example": "e4ce975e-f7ff-4b5e-b15e-bf25f59371ae"
+                    "example": ""
                 },
                 "required": true,
                 "allowEmptyValue": false,
@@ -945,7 +945,7 @@
                 "in": "header",
                 "schema": {
                     "type": "string",
-                    "example": "KEYPAIR_JWT"
+                    "example": "OAUTH"
                 },
                 "required": false,
                 "allowEmptyValue": true,
