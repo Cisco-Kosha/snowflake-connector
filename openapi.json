@@ -868,7 +868,7 @@
                 "in": "query",
                 "schema": {
                     "type": "boolean",
-                    "example": true
+                    "example": false
                 },
                 "required": false,
                 "description": "Set to true to execute the statement asynchronously and return the statement handle. If the parameter is not specified or is set to false, a statement is executed and the first result is returned if the execution is completed in 45 seconds. If the statement execution takes longer to complete, the statement handle is returned."
@@ -890,7 +890,7 @@
                 "in": "query",
                 "schema": {
                     "type": "boolean",
-                    "example": false
+                    "example": true
                 },
                 "required": false,
                 "description": "Set to true to execute the statement to generate the result set including null. If the parameter is set to false, the result set value null will be replaced with a string 'null'."
