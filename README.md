@@ -20,7 +20,7 @@ Once you've logged-in to your account, you would need to authenticate to the ser
 ### Enabling OAuth Connection ###
 
 1. The user would first have to set the default account role to sysadmin. This can be achieved by the below query. 
-```alter user admin set default role = sysadmin;```
+```alter user admin set default_role = sysadmin;```
 
 2. The user would also have to create a database using the query ```CREATE DATABASE <enter database-name>;``` and then
 choose an existing warehouse from the list of warehouses in their account 
@@ -55,13 +55,7 @@ This should return a "Integration <enter security integration name> successfully
 
 * Once the user signs in to their account, they can go access the Snowflake API and make API calls. The API is available at https://<account_identifier>.snowflakecomputing.com/api, where <account_identifier> is the account identifier. Read more about Snowflake's Account identifier [here](https://docs.snowflake.com/en/user-guide/admin-account-identifier).
 
-* The different endpoints offered by the API are:
-
-| Endpoint | Description |
-| -------------------------------------------- | -------------------------------------------- |
-| /api/v2/statements/ | Use this endpoint to submit SQL statements for execution. |
-| /api/v2/statements/{< statementHandle >} | Use this endpoint to check the status of the execution of a statement. (statementHandle is a unique identifier for the statement submitted for execution). |
-| /api/v2/statements/{< statementHandle >}/cancel | Use this endpoint to cancel the execution of a statement. |
+* The different endpoints offered by the API can be accessed [here] (https://docs.snowflake.com/en/developer-guide/sql-api/about-endpoints)
 
 
 ## Kosha Connector Open Source Development
