@@ -55,7 +55,7 @@ This should return a "Integration <enter security integration name> successfully
 
 * Once the user signs in to their account, they can go access the Snowflake API and make API calls. The API is available at https://<account_identifier>.snowflakecomputing.com/api, where <account_identifier> is the account identifier. Read more about Snowflake's Account identifier [here](https://docs.snowflake.com/en/user-guide/admin-account-identifier).
 
-* The different endpoints offered by the API can be accessed [here] (https://docs.snowflake.com/en/developer-guide/sql-api/about-endpoints)
+* The different endpoints offered by the API can be accessed [here](https://docs.snowflake.com/en/developer-guide/sql-api/about-endpoints).
 
 
 ## Kosha Connector Open Source Development
